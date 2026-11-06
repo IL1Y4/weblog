@@ -1,4 +1,7 @@
+{% load static %}
+
 <!doctype html>
+
 <html lang="fa" >
     <head>
         <!-- Required meta tags -->
@@ -35,16 +38,18 @@
 						</button>
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent" >
-							<ul class="nav navbar-nav menu_nav mr-auto"  >
-								<li class="nav-item active"><a class="nav-link" href="index.html">خانه</a></li> 
-								<li class="nav-item"><a class="nav-link" href="about-us.html">درباره ما</a></li> 
-								<li class="nav-item"><a class="nav-link" href="services.html">خدمات</a></li> 
-								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="margin-left:30px;" >وبلاگ</a>
-									<ul class="dropdown-menu "  >
-										<li class="nav-item"><a class="nav-link txt-alg-hd" href="blog.html" >وبلاگ</a></li>
-										<li class="nav-item"><a class="nav-link txt-alg-hd" href="single-blog.html">صفحه داخلی</a></li>
-									</ul>
+							<ul class="nav navbar-nav menu_nav mr-auto">
+    <li class="nav-item active"><a class="nav-link" href="{% url 'home' %}">خانه</a></li> 
+    <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">درباره ما</a></li> 
+    <li class="nav-item"><a class="nav-link" href="{% url 'services' %}">خدمات</a></li> 
+    <li class="nav-item submenu dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="margin-left:30px;" >وبلاگ</a>
+        <ul class="dropdown-menu">
+            <li class="nav-item"><a class="nav-link txt-alg-hd" href="{% url 'blog' %}">وبلاگ</a></li>
+            <li class="nav-item"><a class="nav-link txt-alg-hd" href="single-blog.html">صفحه داخلی</a></li>
+        </ul>
+    </li>
+</ul>
 								</li> 
 								<li class="nav-item"><a class="nav-link" href="contact.html"  >تماس با ما</a></li>
 							</ul>

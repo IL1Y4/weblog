@@ -1,12 +1,12 @@
 from django.urls import path
 from . import views
 
-app_name = 'Myweb'
+
 
 urlpatterns = [
-    path('', views.home , name='home'),
-    path('', views.about , name='about'),
-    path('', views.contact , name='contact'),
-    path('', views.services , name='services'),
-    path('', views.blog , name='blog'),
+    path('', views.home, name='home'),                      # صفحه اصلی (آدرس خالی)
+    path('about/', views.about, name='about'),              # صفحه درباره ما
+    path('contact/', views.contact, name='contact'),        # صفحه تماس با ما
+    path('services/', views.services, name='services'),     # صفحه خدمات
+    path('blog/', views.blog, name='blog'),                 # صفحه وبلاگ
 ]

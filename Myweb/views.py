@@ -20,3 +20,5 @@ def contact(request):
 
 def blog(request):
     return render(request, 'myweb/blog.html')
+
+
