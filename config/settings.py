@@ -40,9 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Myweb',
-    'weblog',
-    'Myweb.apps.MywebConfig', # Main site pages app
-'weblog.apps.WeblogConfig', # Blog and articles app
+    'weblog', # Blog and articles app
 ]
 
 MIDDLEWARE = [
@@ -70,7 +68,7 @@ TEMPLATES = [
 'django.contrib.messages.context_processors.messages',
 ],
 },
-}
+}]
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
