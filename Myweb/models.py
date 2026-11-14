@@ -5,7 +5,7 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 class Profile(models.Model):
     full_name = models.CharField(max_length=100, verbose_name='نام و نام خانوادگی')
     job_title = models.CharField(max_length=50, verbose_name='عنوان شعل')
-    intro_text = models.Textfield(verbose_name='متن کوتاه معرفی در هدر')
+    
     about_text = models.Textfield(verbose_name='درباره ی من')
     birth_date = models.CharField(max_length=50, verbose_name='تاریخ تولد ', default='1389/12/22')
     phone = models.CharField(max_length=30, verbose_name='شماره تماس')
